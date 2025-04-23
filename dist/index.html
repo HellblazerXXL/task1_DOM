@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About ME</title>
+    <link rel="stylesheet" href="/task1_DOM/dist/style.css">
+</head>
+<body>
+    <main id="mainSection" class="bg-orange-300"></main>
+   
+    <script>
+        let container = document.createElement(section)
+
+        container.id = "data"
+
+      
+
+        container.innerHTML = '<div> id="name" class="text-5xl text-gray-500 font-bold">Msughter Apera</div>'
+        container.innerHTML = '<span id="age" class="text-4xl text-red-500 font-bold">110</span>'
+        container.innerHTML = '<span id="height" class="text-black font-bold text-4xl">6,11</span>'
+
+        document.getElementById("name").innerText = "Msughter Apera"
+        document.getElementById("age").innerText = "110"
+        document.getElementById("height").innerText ="6''"
+
+
+
+
+        document.getElementById("mainSection").appendChild(container)
+    </script>
+    
+    
+    
+
+    
+</body>
+</html>
