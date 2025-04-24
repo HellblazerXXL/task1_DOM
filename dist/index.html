@@ -7,32 +7,36 @@
     <link rel="stylesheet" href="/task1_DOM/dist/style.css">
 </head>
 <body>
-    <main id="mainSection" class="bg-orange-300"></main>
+    <header>
+        <nav class="flex justify-around bg-orange-300">
+            <div id="logo" class="text-5xl text-red-600 font-bold"></div>
+            <div>
+                <ul class="flex gap-20 font-medium">
+                    <li><a href="" id="name"></a></li>
+                    <li><a href="" id="age"></a></li>
+                    <li><a href="" id="height"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="main" class="bg-orange-300 mt-10 text-3xl font-bold py-10 mx-10 px-5 rounded-md"></main>
    
     <script>
-        let container = document.createElement(section)
-
+        let container = document.createElement("section")
         container.id = "data"
 
-      
+        container.innerHTML = "<div><p>I will be one of the best developers blockfuse will graduate. Quote this by the year's end</p></div>"
+        container.style.background = "pink"
+        container.style.borderRadius = "16px"
+        container.style.padding = "16px"
 
-        container.innerHTML = '<div> id="name" class="text-5xl text-gray-500 font-bold"></div>'
-        container.innerHTML = '<span id="age" class="text-4xl text-red-500 font-bold"></span>'
-        container.innerHTML = '<span id="height" class="text-black font-bold text-4xl"></span>'
+        document.getElementById("logo").innerText = "MA"
+        document.getElementById("name").innerText = "Name: Msughter Apera"
+        document.getElementById("age").innerText = "Age: 110"
+        document.getElementById("height").innerText ="Height: 6''"
 
-        document.getElementById("name").innerText = "Msughter Apera"
-        document.getElementById("age").innerText = "110"
-        document.getElementById("height").innerText ="6''"
-
-
-
-
-        document.getElementById("mainSection").appendChild(container)
+        document.getElementById("main").appendChild(container)
     </script>
-    
-    
-    
-
     
 </body>
 </html>
